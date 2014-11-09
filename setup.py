@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='cpchunk',
     # NB: update cpchunk.py when changing this
-    version='1.0.0',
+    version='1.0.0.1',
     description="A tool for copying chunks of files",
     url='http://github.com/furrykef/cpchunk',
     author='Kef Schecter',

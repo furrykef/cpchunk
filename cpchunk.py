@@ -11,7 +11,7 @@ import sys
 
 
 # NB: also update setup.py when changing
-__version__ = '1.0.0'
+__version__ = '1.0.0.1'
 
 
 def main(argv=None):
