@@ -11,7 +11,7 @@ import sys
 
 
 # NB: also update setup.py when changing
-__version__ = '1.0.0.1'
+__version__ = '1.0.0.4'
 
 
 def main(argv=None):
@@ -56,6 +56,7 @@ def main(argv=None):
 
 def get_args(argv):
     parser = argparse.ArgumentParser(
+        prog="cpchunk",
         description="Copy part or all of a file and insert it into "
                     "another file.",
         epilog="All numbers are in decimal unless prefixed with 0x (hex), 0b "
