@@ -15,6 +15,7 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Topic :: Utilities',
     ],
+    scripts=['cpchunk.py'],
     entry_points={
         'console_scripts': ['cpchunk=cpchunk:main']
     }
