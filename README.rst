@@ -14,6 +14,7 @@ What it's good for
 cpchunk was written as a ROM hacking tool, but it has no behavior specific to dealing with ROMs. Any time you want to copy (part of) a file into (part of) another file, cpchunk is your tool.
 
 Here is a real-world example. The arcade game Donkey Kong stores its main program code from 0x0000 to 0x3fff in memory space. However, this code must be split across four different ROM files:
+
   * 0x0000-0fff is stored in c_5et_g.bin
   * 0x1000-1fff is stored in c_5ct_g.bin
   * 0x2000-2fff is stored in c_5bt_g.bin
@@ -29,6 +30,7 @@ Since these blocks are contiguous, a programmer making a ROM for this hardware w
 The ``-s`` option defines the source offset to copy from, and the ``-l`` option defines the length of the chunk to copy. So the lines can be read as "Extract 0x1000 bytes from dkong.bin starting at 0x0000 and put them into c_5et_g.bin", and so forth.
 
 Suppose instead the programmer were making a ROM for Donkey Kong Junior hardware. The ROM map for this hardware is rather stranger:
+
   * djr1-c_5b_f-2.5b contains 0x0000-0fff, then 0x3000-3fff
   * djr1-c_5c_f-2.5c contains 0x2000-27ff, then 0x4800-0x4fff, then 0x1000-0x17ff, then 0x5800-0x5fff
   * djr1-c_5e_f-2.5e contains 0x4000-47ff, then 0x2800-0x2fff, then 0x5000-0x57ff, then 0x1800-0x1fff
