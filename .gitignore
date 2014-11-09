@@ -1,5 +1,7 @@
 # Our own stuff goes here
 __pycache__
+*.egg-info
+dist
 
 
 # Standard .gitignore is below

@@ -44,7 +44,6 @@ cpchunk -s 0x1800 -l 0x800 dkongjr.bin -a djr1-c_5e_f-2.5e
 
 Here the `-a` option is used to append to the destination file. Note that the `-a` option does not have to be placed before the destination filename, but its role seems clearest there.
 
-
 ## How to install
 The preferred method if you have a Python 3.4 or later is to type `pip install cpchunk` at the command line.
 
@@ -70,7 +69,3 @@ Ripping a file from 0x1000 to 0x1fff inclusive and appending it to the end of an
 ```shell
 cpchunk -s 0x1000 -l 0x1000 src.bin -a dest.bin
 ```
-
-
-## Why does it have such a lame name?
-I wanted a name that was unused by any existing tool and yet provided an idea of its function.

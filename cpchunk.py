@@ -10,6 +10,7 @@ import argparse
 import sys
 
 
+# NB: also update setup.py when changing
 __version__ = '1.0.0'
 
 
@@ -63,7 +64,8 @@ def get_args(argv):
     )
     parser.add_argument('src')
     parser.add_argument('dest')
-    parser.add_argument('--version', action='version', version='%(prog)s ' + __version__)
+    parser.add_argument('--version', action='version',
+                        version='%(prog)s ' + __version__)
     parser.add_argument(
         '-s', '--src-offset',
         default='0',
